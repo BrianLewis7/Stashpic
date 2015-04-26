@@ -1,0 +1,264 @@
+body {
+    background-image: url('../img/textured_paper.png');
+}
+
+.content {
+	margin-top: 50px;
+}
+
+/* For Social Media Buttons */
+.undecorated-link > img {
+    margin: 10px;
+}
+
+.undecorated-link > img:hover {
+    box-shadow: 0 0 1em 0.3em #2976F2;
+    
+}
+
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+}
+.browsehappy.jumbotron.hide,
+body.ng-cloak
+{
+	display: block;
+}
+
+.navbar-brand {
+    font-family: 'Amatic SC', cursive;
+    font-size: 32px;
+    color: white;
+    
+}
+
+.navbar-brand:hover {
+    color: #2DE319;
+}
+
+.center {
+    text-align: center;
+    
+}
+
+.first > a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.second > a {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.derp {
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    text-align: center;
+}
+
+#yep {
+    font-family: 'Raleway', sans-serif;
+}
+    
+
+.img-wrap {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+}
+
+
+.shadow {
+	-webkit-box-shadow: 0 6px 6px -6px black;
+	   -moz-box-shadow: 0 6px 6px -6px black;
+	        box-shadow: 0 6px 6px -6px black;
+}
+
+.end {
+    background: #001F2D;
+    color: white;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    
+}
+
+.cheah {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+
+#copyright {
+    font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+}
+
+.footer-list {
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  list-style: none;
+}
+
+.footer-list a {
+  margin: 30px 0;
+  width: 300px;
+  text-decoration: none;
+}
+
+.footer-list a li {
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.footer-list-social {
+  
+  display: inline-block;
+  margin-top: 10px;
+  
+}
+
+.footer-list-social li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.stash {
+    background: url('../img/brand/stash_white.png');
+    display: block;
+    height: 156px;
+    width: 202px;
+    margin: auto;
+    
+    
+}
+
+.stash:hover {
+    background: url('../img/brand/stash_green.png');
+    display: block;
+ 
+}
+
+.caret {
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .caret {
+        display: none;
+    }
+}
+
+.caption-style-3 {	
+        list-style-type: none;
+		margin: 0;
+		padding: 0;
+		
+	}
+
+	.caption-style-3 li {
+        font-family: 'Raleway', sans-serif;
+        float: left;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-3 li:hover .caption{
+		opacity: 1;
+		transform: translateY(-100px);
+		-webkit-transform:translateY(-100px);
+		-moz-transform:translateY(-100px);
+		-ms-transform:translateY(-100px);
+		-o-transform:translateY(-100px);
+	}
+
+	.caption-style-3 li:hover img {
+		opacity: 1;
+		transform: translateY(-40px);
+		-webkit-transform:translateY(-40px);
+        -o-transform:translateY(-40px);
+		-moz-transform:translateY(-40px);
+		-ms-transform:translateY(-40px);
+		
+
+	}
+
+
+	.caption-style-3 img {
+		margin: 0;
+		padding: 0;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-3 .caption {
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		top: 300px;
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+
+	}
+
+    .caption-text {
+        margin-left: -15px;
+    }
+
+	.caption-style-3 img{
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+
+	}
+	.caption-style-3 .blur{
+		background-color: #1c6dac;
+        opacity: 0.8;
+		height: 300px;
+		width: 400px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-3 .caption-text h1{
+		text-transform: uppercase;
+		font-size: 18px;
+        text-align: center;
+	}
+	.caption-style-3 .caption-text {
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		text-align: center;
+		top:20px;
+	}
+	#socket{
+
+		color: #ff0000;
+		margin-left: 215px;
+		padding-top: 10px;
+	}

@@ -1,0 +1,38 @@
+<section data-ng-controller="PhotosController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="photo.name"></h1>
+	</div>
+	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == photo.user._id))">
+		<a class="btn btn-primary" href="/#!/photos/{{photo._id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-primary" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+	<div>
+		<h2>
+			Posted on
+			<span data-ng-bind="photo.created | date:'mediumDate'"></span>
+			by
+			<span data-ng-bind="photo.user.displayName"></span>
+		</h2>
+		</div>
+		<div>
+		<h2>
+			Likes: <span data-ng-bind="photo.likes.length-1"></span>
+			Views: <span data-ng-bind="photo.views"></span>
+		</h2>
+		</div>
+		<div>
+		<h2>
+		
+			<button class="btn btn-success" ng-click="likeThis()" id="btn-like" data-id="{{ image.uniqueId }}" ng-show="!isLiked && authentication.user._id"><i class="fa fa-heart">Like</i></button>
+			
+		</h2>
+		</div>
+		<div class="page-body">
+			<image ng-src="{{photo.image}}"/>
+		</div>
+	</div>
+</section>
