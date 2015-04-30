@@ -1,8 +1,12 @@
 <section class="row" data-ng-controller="SettingsController">
+
 	<h3 class="col-md-12 text-center">Edit your profile</h3>
-	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
+	
+
+	<div class=" col-xs-offset-2 col-md-3">
 		<form name="userForm" data-ng-submit="updateUserProfile(userForm.$valid)" class="signin form-horizontal" autocomplete="off">
-			<fieldset>
+
+			<fieldset class="settings">
 				<div class="form-group">
 					<label for="firstName">First Name</label>
 					<input type="text" id="firstName" name="firstName" class="form-control" data-ng-model="user.firstName" placeholder="First Name">
@@ -30,5 +34,27 @@
 				</div>
 			</fieldset>
 		</form>
+	</div>
+	<div class="col-sm-2">
+		
+			<div class="blah">
+				<div id="top">
+					Manage Profile
+				</div>
+				<hr id="profile">
+				<ul class="menu">
+					<li>
+						<a href="/#!/settings/profile">Edit Profile</a>
+					</li>
+					<li>
+						<a href="/#!/settings/accounts">Manage Social Accounts</a>
+					</li>
+					<li>
+						<a href="/#!/settings/password">Change Password</a>
+					</li>
+				</ul>
+				<hr id="profile">
+			</div>
+			
 	</div>
 </section>

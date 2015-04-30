@@ -1,4 +1,20 @@
 <section class="row" data-ng-controller="SettingsController">
+	<div class="col-md-4">
+			
+				<ul class="menu">
+					<li>
+						<a href="/#!/settings/profile">Edit Profile</a>
+					</li>
+					<li>
+						<a href="/#!/settings/accounts">Manage Social Accounts</a>
+					</li>
+					<li>
+						<a href="/#!/settings/password">Change Password</a>
+					</li>
+				</ul>
+				<hr id="profile">
+			</div>
+	
 	<h3 class="col-md-12 text-center" data-ng-show="hasConnectedAdditionalSocialAccounts()">Connected social accounts:</h3>
 	<div class="col-md-12 text-center">
 		<div data-ng-repeat="(providerName, providerData) in user.additionalProvidersData" class="remove-account-container">
@@ -9,6 +25,7 @@
 		</div>
 	</div>
 	<h3 class="col-md-12 text-center">Connect other social accounts:</h3>
+
 	<div class="col-md-12 text-center">
 		<a href="/auth/facebook" data-ng-hide="isConnectedSocialAccount('facebook')" class="undecorated-link">
 			<img src="/modules/users/img/buttons/facebook.png">
@@ -26,4 +43,8 @@
 			<img src="/modules/users/img/buttons/github.png">
 		</a>
 	</div>
+
+			
+	</div>
+
 </section>

@@ -4,6 +4,7 @@
  * Module dependencies.
  */
 var fs = require('fs'),
+	Jimp = require('jimp'),
 	http = require('http'),
 	https = require('https'),
 	express = require('express'),

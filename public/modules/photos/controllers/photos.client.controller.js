@@ -1,8 +1,8 @@
 'use strict';
 
 //note addition of $http
-angular.module('photos').controller('PhotosController', ['$scope', '$stateParams', '$http', '$location', 'Authentication', 'Photos',  
-	function($scope, $stateParams, $http, $location, Authentication, Photos) {
+angular.module('photos').controller('PhotosController', ['$scope', '$stateParams', '$http', '$location', 'Authentication', 'Socket', 'Photos',  
+	function($scope, $stateParams, $http, $location, Authentication, Socket, Photos) {
 	  $scope.authentication = Authentication;
 
 	  $scope.likes = 0;

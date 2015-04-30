@@ -20,5 +20,24 @@
             </fieldset>
         </form>
     </div>
-    <p>Hello!</p>
+    <div class="container">
+        <div id="buttons">
+            <a class="btn btn-primary" data-ng-click="">
+                <i class="glyphicon glyphicon-pencil"></i>
+            </a>
+             <a class="btn btn-primary" data-ng-click="">
+                <i class="glyphicon glyphicon-equalizer"></i>
+            </a>
+             <a class="btn btn-primary" data-ng-click="">
+                <i class="glyphicon glyphicon-wrench"></i>
+            </a>
+            <a class="btn btn-primary" href="/#!/photos/{{photo._id}}">
+                <i class="glyphicon glyphicon-erase"></i>
+            </a>
+        </div>
+        <br>
+        <div class="page-body">
+            <image id="editpage" ng-src="{{photo.image}}"/>
+        </div>
+    </div>
 </section>
