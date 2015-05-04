@@ -54,11 +54,15 @@ module.exports = {
 				'public/lib/angular-animate/angular-animate.js',
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
+				'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js',
+				'public/modules/photos/main.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				
 			]
 		},
 		css: [
-			'public/modules/**/css/*.css'
+			'public/modules/**/css/*.css',
+			'public/modules/photos/main.css'
 		],
 		js: [
 			'public/config.js',

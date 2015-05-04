@@ -1,11 +1,15 @@
 <!-- Uses core.css stylesheet -->
+<section data-ng-controller="PhotosController" data-ng-init="find()">
 <section data-ng-controller="HomeController">
+<div class="page-header">
+        <h1>Featured</h1>
+    </div>
     <div class="img-wrap">
     <div class="row">
         <div class="col-md-4">
         
         <ul class="caption-style-3">
-            <li><img src="/modules/core/img/dsotm.jpg" class="img-responsive" alt="">     
+            <li> <image src="/modules/core/img/dsotm.jpg" class="img-responsive" alt="">     
             <div class="caption">
                 <div class="blur"></div>
                     <div class="caption-text">
@@ -56,3 +60,15 @@
     
 </section>
 
+<section data-ng-controller="PhotosController" data-ng-init="find()">
+    <div class="page-header" data-ng-show="authentication.user" id="yep">
+        <h1>Recent uploads:</h1>
+    </div>
+    <div data-ng-show="authentication.user" id="yep" >
+        <a data-ng-repeat="photo in photos" data-ng-href="#!/photos/{{photo._id}}">
+            
+            <image src="{{photo.image}}" style="max-width:100%" />
+        </a>
+    </div>
+</section>
+</section>

@@ -1,21 +1,6 @@
 <section class="row" data-ng-controller="SettingsController">
-	<div class="col-md-4">
-			
-				<ul class="menu">
-					<li>
-						<a href="/#!/settings/profile">Edit Profile</a>
-					</li>
-					<li>
-						<a href="/#!/settings/accounts">Manage Social Accounts</a>
-					</li>
-					<li>
-						<a href="/#!/settings/password">Change Password</a>
-					</li>
-				</ul>
-				<hr id="profile">
-			</div>
-	
-	<h3 class="col-md-12 text-center" data-ng-show="hasConnectedAdditionalSocialAccounts()">Connected social accounts:</h3>
+
+	<h3 id="txt" class="col-md-12 text-center" data-ng-show="hasConnectedAdditionalSocialAccounts()">Connected social accounts:</h3>
 	<div class="col-md-12 text-center">
 		<div data-ng-repeat="(providerName, providerData) in user.additionalProvidersData" class="remove-account-container">
 			<img ng-src="/modules/users/img/buttons/{{providerName}}.png">
@@ -24,7 +9,7 @@
 			</a>
 		</div>
 	</div>
-	<h3 class="col-md-12 text-center">Connect other social accounts:</h3>
+	<h3 id="txt" class="col-md-12 text-center">Connect other social accounts:</h3>
 
 	<div class="col-md-12 text-center">
 		<a href="/auth/facebook" data-ng-hide="isConnectedSocialAccount('facebook')" class="undecorated-link">
@@ -44,6 +29,28 @@
 		</a>
 	</div>
 
+			
+	</div>
+	<div class="col-sm-4">
+		
+			<div id="social">
+				<div id="top">
+					Manage Profile
+				</div>
+				<hr id="profile">
+				<ul class="menu">
+					<li class="option">
+						<a href="/#!/settings/profile">Edit Profile</a>
+					</li>
+					<li class="option">
+						<a href="/#!/settings/accounts">Manage Social Accounts</a>
+					</li>
+					<li class="option">
+						<a href="/#!/settings/password">Change Password</a>
+					</li>
+				</ul>
+				<hr id="profile">
+			</div>
 			
 	</div>
 

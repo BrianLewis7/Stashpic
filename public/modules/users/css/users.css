@@ -12,3 +12,19 @@
 	right: 10px;
 	position: absolute;
 }
+
+#txt{
+	padding-top: 20px;
+	font-weight: bolder;
+	font-size: 25px;
+}
+.menu{
+	margin: 10px;
+}
+.option{
+
+	padding-bottom: 10px;
+}
+#social{
+	background-color: #fff;
+}

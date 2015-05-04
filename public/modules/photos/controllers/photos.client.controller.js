@@ -91,5 +91,20 @@ angular.module('photos').controller('PhotosController', ['$scope', '$stateParams
               $scope.isLiked=true;
 	    });
 
-         };   
+         };
+
+       
+
         }]);
+
+  var jimp = require ("jimp");
+  var lenna = new Jimp("lenna.png", function () {
+    this.resize(220, 220) // resize
+        .write("lenna-small.png") // save
+        .quality(60) // set JPEG quality
+        .write("lenna-small.jpg") // save as JPEG
+        .greyscale() // set greyscale
+        .write("lena-small-bw.png") // save again
+        .crop(80, 100, 80, 50) // crop
+        .write("lena-small-bw-cropped.png"); // save again
+});
