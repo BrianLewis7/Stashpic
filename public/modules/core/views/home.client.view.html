@@ -1,6 +1,21 @@
 <!-- Uses core.css stylesheet -->
-<section data-ng-controller="PhotosController" data-ng-init="find()">
+
 <section data-ng-controller="HomeController">
+<section data-ng-controller="PhotosController" data-ng-init="find()">
+
+<container id="twit">
+            <a href="https://twitter.com/stashpic" class="twitter-follow-button" data-show-count="false">Follow @stashpic</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <a class="twitter-hashtag-button"
+              href="https://twitter.com/intent/tweet?button_hashtag=stashpic&text=You%20have%20to%20check%20this%20out!%20"
+              data-related="twitter">
+            Tweet #stashpic
+            </a>
+            <script>
+            window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+            </script>
+
+ </container>
 <div class="page-header">
         <h1>Featured</h1>
     </div>
@@ -65,7 +80,7 @@
         <h1>Recent uploads:</h1>
     </div>
     <div data-ng-show="authentication.user" id="yep" >
-        <a data-ng-repeat="photo in photos" data-ng-href="#!/photos/{{photo._id}}">
+        <a data-ng-repeat="photo in photos " data-ng-href="#!/photos/{{photo._id}}">
             
             <image src="{{photo.image}}" style="max-width:100%" />
         </a>
